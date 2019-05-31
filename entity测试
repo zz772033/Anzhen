@@ -1,0 +1,263 @@
+	var date1 = {
+    //   id: 12345,
+    //   name: "box",
+    //   position: {
+    //     longitude: 120.12,
+    //     latitude: 30.26,
+    //     height: 1000
+    //   },
+    //   box: {
+    //     dimensions: {
+    //       x: 40000,
+    //       y: 40000,
+    //       z: 40000
+    //     },
+    //     material: "red",
+    //     outline: true,
+    //     outlineColor: "blue"
+    //   }
+    // };
+    // var date2 = {
+    //   id: 23456,
+    //   name: "billboard广告牌",
+    //   position: {
+    //     longitude: 120.12,
+    //     latitude: 30.26,
+    //     height: 0
+    //   },
+    //   billboard: {
+    //     image: "../thirdparty/Cesium-1.55/Assets/Images/cesium_credit.png",
+    //     show: true,
+    //     pixelOffset: {
+    //       x: 0,
+    //       y: 0
+    //     },
+    //     eyeOffset: {
+    //       x: 0,
+    //       y: 0,
+    //       z: 0
+    //     },
+    //     horizontalOrigin: "center",
+    //     verticalOrigin: "BOTTOM",
+    //     scale: 2.0,
+    //     color: "#eee",
+    //     rotation: 3.14 / 4,
+    //     alignedAxis: "zero",
+    //     width: 100,
+    //     height: 25
+    //   }
+    // };
+    // var date3 = {
+    //   id: 34567,
+    //   name: "Corridor走廊",
+    //   corridor: {
+    //     positions: [
+    //       {
+    //         longitude: 120.12,
+    //         latitude: 30.26
+    //       },
+    //       {
+    //         longitude: 125.12,
+    //         latitude: 30.26
+    //       },
+    //       {
+    //         longitude: 125.12,
+    //         latitude: 25.26
+    //       }
+    //     ],
+    //     height: 200000.0,
+    //     extrudedHeight: 100.0,
+    //     width: 200000.0,
+    //     cornerType: "beveled",
+    //     material: "rgba(255,0,0,0.5)",
+    //     outline: true,
+    //     outlineColor: "blue"
+    //   }
+    // };
+    // var date4 = {
+    //   id: 45678,
+    //   name: "cylinder圆柱",
+    //   position: {
+    //     longitude: 120.12,
+    //     latitude: 30.26,
+    //     height: 0
+    //   },
+    //   cylinder: {
+    //     length: 4000.0,
+    //     topRadius: 2000.0,
+    //     bottomRadius: 0.0,
+    //     material: "GREEN",
+    //     outline: true,
+    //     outlineColor: "DARK_GREEN"
+    //   }
+    // };
+    // var date5 = {
+    //   id: 56789,
+    //   name: "ellipse椭圆",
+    //   position: {
+    //     longitude: 120.12,
+    //     latitude: 30.26,
+    //     height: 0
+    //   },
+    //   ellipse: {
+    //     semiMinorAxis: 150000.0,
+    //     semiMajorAxis: 300000.0,
+    //     extrudedHeight: 200000.0,
+    //     rotation: 90,
+    //     material: "BLUE",
+    //     outline: true
+    //   }
+    // };
+    // var date6 = {
+    //   id: 67891,
+    //   name: "ellipsoid椭圆体",
+    //   position: {
+    //     longitude: 120.12,
+    //     latitude: 30.26,
+    //     height: 0
+    //   },
+    //   ellipsoid: {
+    //     radii: {
+    //       x: 2000,
+    //       y: 2000,
+    //       z: 3000
+    //     },
+    //     material: {
+    //       type: "Color"
+    //     },
+    //     fill: false,
+    //     outline: true,
+    //     outlineColor: "YELLOW",
+    //     slicePartitions: 24,
+    //     stackPartitions: 36
+    //   }
+    // };
+    // var date7 = {
+    //   id: 67892,
+    //   name: "ellipsoid椭圆体 + label",
+    //   position: {
+    //     longitude: 120.12,
+    //     latitude: 30.26,
+    //     height: 0
+    //   },
+    //   ellipsoid: {
+    //     radii: {
+    //       x: 2000,
+    //       y: 2000,
+    //       z: 3000
+    //     },
+    //     fill: false,
+    //     outline: true,
+    //     outlineColor: "YELLOW",
+    //     slicePartitions: 24,
+    //     stackPartitions: 36
+    //   },
+    //   label: {
+    //     text: "这是一个大椭圆",
+    //     font: "20px sans-serif",
+    //     showBackground: true,
+    //     horizontalOrigin: "right",
+    //     pixelOffsetScaleByDistance: {
+    //       near: 1.5e2,
+    //       nearValue: 3.0,
+    //       far: 1.5e7,
+    //       farValue: 0.5
+    //     }
+    //   }
+    // };
+    // var date8 = {
+    //   id: 67893,
+    //   name: "model军用车",
+    //   position: {
+    //     longitude: 120.12,
+    //     latitude: 30.26,
+    //     height: 0
+    //   },
+    //   model: {
+    //     url: "../thirdparty/baoma.gltf",
+    //     heightReference: "CLAMP_TO_GROUND",
+    //     minimumPixelSize: 128,
+    //     maximumScale: 20,
+    //     scale: 8.0
+    //   }
+    // };
+    // var date9 = {
+    //   id: 67894,
+    //   name: "polygon",
+    //   polygon: {
+    //     hierarchy: {
+    //       positions: [
+    //         {
+    //           longitude: 115.12,
+    //           latitude: 37.26
+    //         },
+    //         {
+    //           longitude: 115.12,
+    //           latitude: 32.26
+    //         },
+    //         {
+    //           longitude: 107.12,
+    //           latitude: 33.26
+    //         },
+    //         {
+    //           longitude: 102.12,
+    //           latitude: 31.26
+    //         }
+    //       ]
+    //     },
+    //     material: "red"
+    //   }
+    // };
+    // var date10 = {
+    //   id: 67894,
+    //   name: "wall",
+    //   wall: {
+    //     positions: [
+    //       {
+    //         longitude: 115.12,
+    //         latitude: 37.26
+    //       },
+    //       {
+    //         longitude: 112.12,
+    //         latitude: 37.26
+    //       },
+    //       {
+    //         longitude: 110.12,
+    //         latitude: 37.26
+    //       },
+    //       {
+    //         longitude: 108.12,
+    //         latitude: 37.26
+    //       },
+    //       {
+    //         longitude: 105.12,
+    //         latitude: 37.26
+    //       },
+    //       {
+    //         longitude: 103.12,
+    //         latitude: 37.26
+    //       }
+    //     ],
+    //     maximumHeights: [100000, 200000, 100000, 200000, 100000, 200000],
+    //     minimumHeights: [0, 100000, 0, 100000, 0, 100000],
+    //     material: "blue",
+    //     outline: true,
+    //     outlineColor: "YELLOW"
+    //   }
+    // };
+    // var date11 = {
+    //   name: "矩形",
+    //   rectangle: {
+    //     coordinates: {
+    //       west: 2,
+    //       south: 0.5,
+    //       east: 2.1,
+    //       north: 0.6
+    //     },
+    //     extrudedHeight: 300000.0,
+    //     height: 100000.0,
+    //     material: "blue",
+    //     outline: true,
+    //     outlineColor: "YELLOW"
+    //   }
+    // };
